@@ -1,10 +1,10 @@
 variable "aws_region" {
   description = "The AWS region to create things in."
-  default     = "ap-south-1"
+  default     = "eu-west-1"
 }
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     = "Mumbai"
+  default     = "ireland"
 }
 variable "instance_type" {
   description = "instance type for ec2"
@@ -12,12 +12,12 @@ variable "instance_type" {
 }
 variable "ami_id" {
   description = "AMI for Ubuntu Ec2 instance"
-  default     = "ami-0f5ee92e2d63afc18"
+  default     = "ami-0905a3c97561e0b69"
 }
 variable "bucket_name" {
   description = "The name of the S3 bucket to create"
   type        = string
-  default     = "mrcloudbook-777-ajaykumar-yegireddi"
+  default     = "sai-jenkins-cicd-777"
 }
 
 variable "acl" {
